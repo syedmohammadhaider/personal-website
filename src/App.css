@@ -121,6 +121,12 @@ section span {
     font-size: 1rem;
 }
 
+@media (max-width: 768px) {
+    .tech-chip p {
+        font-size: 0.8rem;
+    }
+}
+
 /* Footer */
 .footer-container {
     width: 60%;
