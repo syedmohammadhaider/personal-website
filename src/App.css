@@ -1,0 +1,152 @@
+@import url('./index.css');
+
+.hero {
+  position: relative;
+}
+
+.hero-vid {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.hero-vid video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  border-radius: var(--border-radius);
+}
+
+.hero-img {
+  position: absolute;
+  width: 125px;
+  left: 2.5%;
+  bottom: -50px;
+  border: 7px solid var(--background);
+  border-radius: var(--border-radius);
+}
+
+.content {
+    margin-top: 75px;
+}
+
+section {
+    margin-top: 50px;
+}
+
+section span {
+    display: flex;
+    align-items: last baseline;
+    gap: 20px;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.social-links li a {
+    cursor: pointer;
+    opacity: 0.75;
+    transition: all 0.1s;
+}
+
+.social-links li a:hover {
+    opacity: 1;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+@media (max-width: 768px) {
+    .project-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* ProjectCard styles */
+.project-card-container {
+    border: 1px solid var(--border-color);
+    padding: 8px;
+    border-radius: var(--border-radius);
+}
+
+.project-card-container img {
+    border-radius: 6px;
+    aspect-ratio: 1.7777777777;
+}
+
+.project-name-and-links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: last baseline
+}
+
+.project-links {
+    display: flex;
+    gap: 15px;
+}
+
+.project-links a {
+    opacity: 0.75;
+    transition: opacity 0.1s;
+}
+
+.project-links a:hover {
+    opacity: 1;
+}
+
+/* Tech Stack */
+.tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.tech-chip {
+    padding: 4px 8px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+}
+
+.tech-chip p {
+    font-size: 1rem;
+}
+
+/* Footer */
+.footer-container {
+    width: 60%;
+    padding: 50px 0px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-container>* {
+    margin-bottom: 12px;
+}
+
+.footer-container ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-container a {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+}
+
+.footer p {
+    font-size: 1rem;
+    text-align: center;
+}
